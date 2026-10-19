@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Turismo vivencial | Mi Kcao</title>
+<meta content="Experiencias de turismo vivencial conectadas con la finca y su cultura." name="description"/>
+<meta content="#C4562B" name="theme-color"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;text y='26' font-size='26'&gt;🍫&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,600&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<meta content="Mi Kcao Chocolates y Café" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="Mi Kcao | Chocolatería y cafetería rooftop en Arequipa" property="og:title"/>
+<meta content="Café y chocolate orgánico de nuestra finca en Cusco, en una terraza en Arequipa." property="og:description"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Mi Kcao Chocolates y Café","address":{"@type":"PostalAddress","streetAddress":"Rooftop, C. Ugarte 314","addressLocality":"Arequipa","addressCountry":"PE"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"21:00"}],"telephone":["+51991127756","+51958074890"],"email":"treetobarfoods@gmail.com","servesCuisine":"Café, chocolate, vegana, sin gluten"}
+</script>
+
+<link href="assets/css/site.css" rel="stylesheet"/>
+<style>
+/* ===== Estilos específicos para la página de Turismo Vivencial ===== */
+/* Hero con imagen de fondo */
+.hero-bg{position:absolute;inset:0;z-index:1;overflow:hidden;background:#2a1a12;pointer-events:none}
+.hero-bg img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-bg::after{content:"";position:absolute;inset:0;z-index:2;
+  background:
+    linear-gradient(90deg,rgba(20,11,7,.74) 0%,rgba(20,11,7,.52) 42%,rgba(20,11,7,.14) 100%),
+    linear-gradient(0deg,rgba(20,11,7,.60) 0%,rgba(20,11,7,0) 45%),
+    linear-gradient(180deg,rgba(20,11,7,.30) 0%,rgba(20,11,7,0) 22%)}
+.hero-in{position:relative;z-index:3}
+.hero .hero-in .eyebrow{color:#F2C879;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.hero .hero-in h1,.hero .hero-in .lead{color:#FFF6EC;text-shadow:0 2px 22px rgba(0,0,0,.55)}
+.hero .hero-in h1 em{color:#F6B98B}
+.hero .hero-in .btn.ghost{color:#FFF6EC;border-color:rgba(255,246,236,.75)}
+@media (max-width:760px){
+  .hero-bg::after{background:linear-gradient(0deg,rgba(20,11,7,.80) 0%,rgba(20,11,7,.58) 55%,rgba(20,11,7,.50) 100%)}
+}
+
+/* La galería (masonry, 3 columnas) se define en assets/css/site.css
+   bajo el selector .gallery-grid.is-masonry */
+</style>
+</head>
+<body data-current-page="turismo-vivencial"><div aria-hidden="true" class="prog" id="prog"></div><header class="nav">
+<div class="wrap nav-in">
+<a aria-label="Mi Kcao — inicio" class="brand" href="index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 3c5.4 3.3 8.6 8 8.6 12.8 0 4.4-3.5 8.7-8.6 11.2-5.1-2.5-8.6-6.8-8.6-11.2C7.4 11 10.6 6.3 16 3z" fill="currentColor" opacity=".92"></path>
+<path d="M16 7v18" fill="none" stroke="var(--bg)" stroke-linecap="round" stroke-width="1.7"></path>
+</svg>
+<span>Mi Kcao</span>
+</a>
+<nav aria-label="Navegación principal" class="links">
+<a class="" data-en="Farm" data-es="Finca" data-nav="" href="finca-organica.html">Finca</a>
+<a class="" data-en="Café" data-es="Cafetería" data-nav="" href="cafeteria-rooftop.html">Cafetería</a>
+<a class="" data-en="Menu" data-es="Carta" data-nav="" href="carta.html">Carta</a>
+<a class="" data-en="Workshops" data-es="Talleres" data-nav="" href="talleres.html">Talleres</a>
+<a class="is-active" data-en="Farm stay" data-es="Turismo vivencial" data-nav="" href="turismo-vivencial.html">Turismo vivencial</a>
+<a class="" data-en="Shop" data-es="Tienda" data-nav="" href="tienda.html">Tienda</a>
+<a class="" data-en="About" data-es="Nosotros" data-nav="" href="nosotros.html">Nosotros</a>
+<a class="" data-en="Contact" data-es="Contacto" data-nav="" href="contacto.html">Contacto</a>
+</nav>
+<div class="tools">
+<span aria-live="polite" class="status" id="status"><span class="dot"></span><span class="txt">Abierto ahora</span></span>
+<button aria-label="Cambiar idioma" class="chip" id="langBtn" type="button">EN</button>
+<button aria-label="Cambiar tema" class="chip" id="themeBtn" type="button">☾</button>
+</div>
+</div>
+</header><main id="main"><section class="page" id="turismo-vivencial">
+<div class="hero" style="min-height:78svh">
+<div class="hero-bg" aria-hidden="true">
+    <img alt="" decoding="async" fetchpriority="high" sizes="100vw" src="assets/img/Vivencial2.jpg" />
+</div>
+<div class="wrap hero-in">
+<p class="eyebrow" data-en="Santa Teresa, Cusco" data-es="Santa Teresa, Cusco">Santa Teresa, Cusco</p>
+<h1 data-en="An authentic farm stay in the &lt;em&gt;Cusco jungle&lt;/em&gt;" data-es="Una estadía auténtica en la &lt;em&gt;selva de Cusco&lt;/em&gt;">Una estadía auténtica en la <em>selva de Cusco</em></h1>
+<p class="lead" data-en="Disconnect from the city and live everyday life alongside a local farming family." data-es="Desconéctate de la ciudad y vive el día a día junto a una familia campesina.">Desconéctate de la ciudad y vive el día a día junto a una familia campesina.</p>
+<a class="btn primary" data-en="Book on WhatsApp" data-es="Reservar por WhatsApp" href="https://wa.me/51958074890" rel="noopener" target="_blank">Reservar por WhatsApp</a>
+</div>
+</div>
+<div class="sec wrap">
+<div class="split">
+<div class="rv">
+<p class="eyebrow" data-en="What it's about" data-es="De qué se trata">De qué se trata</p>
+<h2 data-en="Not a hotel: &lt;em&gt;it's a home&lt;/em&gt;" data-es="No es un hotel: &lt;em&gt;es una casa&lt;/em&gt;">No es un hotel: <em>es una casa</em></h2>
+</div>
+<div class="rv">
+<p class="lead" data-en="Our organic farm is in the mountains of Santa Teresa. You will learn about traditional agriculture, permaculture, bioconstruction, local food and ancestral knowledge. This is not a hotel or resort: you share meals, stories and daily tasks with your hosts." data-es="Nuestra finca orgánica está en las montañas de Santa Teresa. Aprenderás sobre agricultura tradicional, permacultura, bioconstrucción, comida local y saberes ancestrales. Esto no es un hotel ni un resort: compartes comidas, historias y tareas con tus anfitriones.">Nuestra finca orgánica está en las montañas de Santa Teresa. Aprenderás sobre agricultura tradicional, permacultura, bioconstrucción, comida local y saberes ancestrales. Esto no es un hotel ni un resort: compartes comidas, historias y tareas con tus anfitriones.</p>
+</div>
+</div>
+</div>
+<div class="sec tight wrap">
+<div class="stats">
+<div class="stat rv"><b>US$ 50</b><span data-en="Per night" data-es="Por noche">Por noche</span></div>
+<div class="stat rv"><b data-en="3 meals" data-es="3 comidas">3 comidas</b><span data-en="With local products, every day" data-es="Con productos locales, cada día">Con productos locales, cada día</span></div>
+<div class="stat rv"><b data-en="Families" data-es="Familias">Familias</b><span data-en="Special price" data-es="Precio especial">Precio especial</span></div>
+</div>
+</div>
+<div class="sec tight wrap">
+<div class="cards">
+<article class="card rv"><h3 data-en="Disconnect" data-es="Desconecta">Desconecta</h3><p data-en="Rivers, forest, waterfalls, birds and fruit trees." data-es="Ríos, bosque, cascadas, aves y frutales.">Ríos, bosque, cascadas, aves y frutales.</p></article>
+<article class="card rv"><h3 data-en="Real rural life" data-es="Vida rural real">Vida rural real</h3><p data-en="A part of the region few travellers ever see." data-es="Una parte de la región que pocos viajeros ven.">Una parte de la región que pocos viajeros ven.</p></article>
+<article class="card rv"><h3 data-en="Beyond Machu Picchu" data-es="Más allá de Machu Picchu">Más allá de Machu Picchu</h3><p data-en="Ancestral farming and traditional cooking." data-es="Agricultura ancestral y cocina tradicional.">Agricultura ancestral y cocina tradicional.</p></article>
+</div>
+</div>
+<div class="sec tight wrap">
+<p class="eyebrow rv" data-en="What you'll experience" data-es="Qué vivirás">Qué vivirás</p>
+<div class="steps">
+<div class="step rv"><p data-en="Growing and harvesting coffee, cacao, coca, cassava, mango, avocado, beans and other fruit." data-es="Cultivo y cosecha de café, cacao, coca, yuca, mango, palta, frijoles y otras frutas.">Cultivo y cosecha de café, cacao, coca, yuca, mango, palta, frijoles y otras frutas.</p></div>
+<div class="step rv"><p data-en="Permaculture and bioconstruction." data-es="Permacultura y bioconstrucción.">Permacultura y bioconstrucción.</p></div>
+<div class="step rv"><p data-en="Local cooking and family meals." data-es="Cocina local y comidas en familia.">Cocina local y comidas en familia.</p></div>
+<div class="step rv"><p data-en="Quechua words and expressions." data-es="Palabras y expresiones en quechua.">Palabras y expresiones en quechua.</p></div>
+<div class="step rv"><p data-en="Walks around the farm and trails." data-es="Caminatas por la finca y senderos.">Caminatas por la finca y senderos.</p></div>
+<div class="step rv"><p data-en="Visits to the waterfalls and river on the farm." data-es="Visitas a las cataratas y al río de la finca.">Visitas a las cataratas y al río de la finca.</p></div>
+<div class="step rv"><p data-en="Make your own essential oil and your own mosquito repellent." data-es="Prepara tu propio aceite esencial y tu propio repelente para mosquitos.">Prepara tu propio aceite esencial y tu propio repelente para mosquitos.</p></div>
+<div class="step rv"><p data-en="Make your own chocolate bar and prepare your own coffee." data-es="Prepara tu propia barra de chocolate y tu propio café.">Prepara tu propia barra de chocolate y tu propio café.</p></div>
+</div>
+</div>
+
+<!-- GALERÍA DE IMÁGENES -->
+<div class="sec tight wrap">
+<p class="eyebrow rv" data-en="Gallery" data-es="Galería">Galería</p>
+<div class="gallery-grid is-masonry">
+    <div class="gallery-item rv">
+        <img alt="Caminata por los Andes" src="assets/img/Vivencial1.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Río en el cañón" src="assets/img/Vivencial3.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Senderismo en la selva" src="assets/img/Vivencial4.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Familia campesina" src="assets/img/Vivencial5.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Cosecha y tradición" src="assets/img/Vivencial6.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Café de altura" src="assets/img/Vivencial7.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Trabajo en la finca" src="assets/img/Vivencial8.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 1" src="assets/img/fotosfinca1u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 2" src="assets/img/fotosfinca2u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 3" src="assets/img/fotosfinca3u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 4" src="assets/img/fotosfinca4u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 5" src="assets/img/fotosfinca5u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 6" src="assets/img/fotosfinca6u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 7" src="assets/img/fotosfinca7u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 8" src="assets/img/fotosfinca8u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 9" src="assets/img/fotosfinca9u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 10" src="assets/img/fotosfinca10u.jpg" loading="lazy" />
+    </div>
+    <div class="gallery-item rv">
+        <img alt="Finca de turismo vivencial 11" src="assets/img/fotosfinca11u.jpg" loading="lazy" />
+    </div>
+</div>
+</div>
+<!-- FIN GALERÍA -->
+
+<div class="sec tight wrap wrap">
+<div class="cards">
+<div class="card rv">
+<h3 data-en="Included" data-es="Incluye">Incluye</h3>
+<p data-en="Private room · shared bathroom · shared kitchen · breakfast, lunch and dinner with local products · farm tour and access to the trails · taking part in the harvests (coffee, cacao, coca, avocado, fruit, beans and more) · visits to the waterfalls and river on the farm · learning local ways of life: cooking, harvesting and the Quechua language · cultural exchange." data-es="Habitación privada · baño compartido · cocina compartida · desayuno, almuerzo y cena con productos locales · recorrido por la finca y acceso a los senderos · participación en las cosechas (café, cacao, coca, palta, frutas, frijoles y más) · visitas a las cataratas y al río de la finca · aprendizaje de la vida local: cocina, cosecha e idioma quechua · intercambio cultural.">Habitación privada · baño compartido · cocina compartida · desayuno, almuerzo y cena con productos locales · recorrido por la finca y acceso a los senderos · participación en las cosechas (café, cacao, coca, palta, frutas, frijoles y más) · visitas a las cataratas y al río de la finca · aprendizaje de la vida local: cocina, cosecha e idioma quechua · intercambio cultural.</p>
+</div>
+<div class="card rv">
+<h3 data-en="For everyone" data-es="Para todos">Para todos</h3>
+<p data-en="Pets are welcome. Bring your own car or motorbike at no cost. Vegetarian and vegan options. Special price for families: ask us." data-es="Se aceptan mascotas. Puedes llegar con tu propio auto o moto, sin costo. Opciones para vegetarianos y veganos. Precio especial para familias: consúltanos.">Se aceptan mascotas. Puedes llegar con tu propio auto o moto, sin costo. Opciones para vegetarianos y veganos. Precio especial para familias: consúltanos.</p>
+</div>
+<div class="card rv">
+<h3 data-en="Location" data-es="Ubicación">Ubicación</h3>
+<p data-en="Santa Teresa, Cusco, 3 hours from Machu Picchu by car. Pick-up point: Santa María or Santa Teresa. Taxi transfer: US$ 6 extra." data-es="Santa Teresa, Cusco, a 3 horas de Machu Picchu en carro. Punto de recojo: Santa María o Santa Teresa. Traslado en taxi: US$ 6 adicionales.">Santa Teresa, Cusco, a 3 horas de Machu Picchu en carro. Punto de recojo: Santa María o Santa Teresa. Traslado en taxi: US$ 6 adicionales.</p>
+</div>
+<div class="card rv">
+<h3 data-en="What to bring" data-es="Qué llevar">Qué llevar</h3>
+<p data-en="Light hiking clothes · long sleeves and trousers · comfortable shoes · rain jacket in the rainy season · insect repellent · sunscreen · hat · personal medication." data-es="Ropa ligera de caminata · mangas y pantalones largos · calzado cómodo · impermeable en temporada de lluvias · repelente · protector solar · sombrero · medicinas personales.">Ropa ligera de caminata · mangas y pantalones largos · calzado cómodo · impermeable en temporada de lluvias · repelente · protector solar · sombrero · medicinas personales.</p>
+</div>
+</div>
+</div>
+<div class="sec tight wrap">
+<blockquote class="card rv" style="border-left:3px solid var(--accent)">
+<p data-en="“The family made us feel at home and taught us how they grow coffee, coca, yuca, mango and many other crops.”" data-es="«La familia nos hizo sentir en casa y nos enseñó cómo cultivan café, coca, yuca, mango y otros cultivos.»" style="font-family:Fraunces,serif;font-size:clamp(1.1rem,1rem + .7vw,1.4rem);font-style:italic;color:var(--fg)">«La familia nos hizo sentir en casa y nos enseñó cómo cultivan café, coca, yuca, mango y otros cultivos.»</p>
+<p data-en="— Benjamin, France" data-es="— Benjamin, Francia" style="margin:0;font-weight:800">— Benjamin, Francia</p>
+</blockquote>
+</div>
+<div class="sec tight wrap">
+<div class="workshop rv">
+<h2 data-en="Disconnect from the city. &lt;em&gt;Reconnect with nature.&lt;/em&gt;" data-es="Desconéctate de la ciudad. &lt;em&gt;Reconéctate con la naturaleza.&lt;/em&gt;">Desconéctate de la ciudad. <em>Reconéctate con la naturaleza.</em></h2>
+<p class="lead" data-en="Experience Peru beyond tourism." data-es="Conoce el Perú más allá del turismo.">Conoce el Perú más allá del turismo.</p>
+<a class="btn primary" data-en="Book on WhatsApp" data-es="Reservar por WhatsApp" href="https://wa.me/51958074890" rel="noopener" target="_blank">Reservar por WhatsApp</a>
+</div>
+</div>
+</section></main><section class="strip">
+<div class="wrap strip-in">
+<div>
+<strong data-en="Chocolate workshops" data-es="Talleres de chocolate">Talleres de chocolate</strong>
+<p data-en="Every day, 10:00 am and 3:30 pm · Spanish &amp; English" data-es="Todos los días, 10:00 a. m. y 3:30 p. m. · En español e inglés">Todos los días, 10:00 a. m. y 3:30 p. m. · En español e inglés</p>
+</div>
+<a class="btn primary" data-en="Book" data-es="Reservar" href="talleres.html">Reservar</a>
+</div>
+</section><footer class="foot">
+<div class="wrap foot-in">
+<div>
+<h4>Mi Kcao</h4>
+<p class="addr">
+        Rooftop, C. Ugarte 314<br/>Arequipa, Perú<br/>
+<span data-en="Mon–Sat 9 am–9 pm · Sunday closed" data-es="Lun–Sáb 9:00–21:00 · Domingo cerrado">Lun–Sáb 9:00–21:00 · Domingo cerrado</span>
+</p>
+</div>
+<div>
+<h4 data-en="Contact" data-es="Contacto">Contacto</h4>
+<ul>
+<li><a href="https://wa.me/51991127756" rel="noopener" target="_blank">WhatsApp +51 991 127 756</a></li>
+<li><a href="https://wa.me/51958074890" rel="noopener" target="_blank">WhatsApp +51 958 074 890</a></li>
+<li><a href="mailto:treetobarfoods@gmail.com">treetobarfoods@gmail.com</a></li>
+</ul>
+</div>
+<div>
+<h4 data-en="Explore" data-es="Explorar">Explorar</h4>
+<ul>
+<li><a data-en="Organic farm" data-es="Finca orgánica" href="finca-organica.html">Finca orgánica</a></li>
+<li><a data-en="Rooftop café" data-es="Cafetería rooftop" href="cafeteria-rooftop.html">Cafetería rooftop</a></li>
+<li><a data-en="Menu" data-es="Carta" href="carta.html">Carta</a></li>
+<li><a data-en="Workshops" data-es="Talleres" href="talleres.html">Talleres</a></li>
+<li><a data-en="Farm stay" data-es="Turismo vivencial" href="turismo-vivencial.html">Turismo vivencial</a></li>
+<li><a data-en="Shop" data-es="Tienda" href="tienda.html">Tienda</a></li>
+<li><a data-en="Wholesale" data-es="Mayoristas" href="mayoristas.html">Mayoristas</a></li>
+</ul>
+</div>
+<div>
+<h4 data-en="Social" data-es="Redes">Redes</h4>
+<ul>
+<li><a href="https://instagram.com/mi.kcao" rel="noopener" target="_blank">Instagram @mi.kcao</a></li>
+<li><a href="#" rel="noopener" target="_blank">Facebook</a></li>
+<li><a href="#" rel="noopener" target="_blank">TikTok</a></li>
+<li><a href="https://maps.google.com/?q=Mi+Kcao+Arequipa" rel="noopener" target="_blank">Google Maps</a></li>
+<li><a href="https://www.tripadvisor.com/" rel="noopener" target="_blank">TripAdvisor</a></li>
+</ul>
+</div>
+</div>
+<div class="wrap foot-bottom">
+<span data-en="RUC 20604914583 · © 2026 Mi Kcao Chocolates y Café" data-es="RUC 20604914583 · © 2026 Mi Kcao Chocolates y Café">RUC 20604914583 · © 2026 Mi Kcao Chocolates y Café</span>
+<span>
+<a data-en="Terms &amp; conditions" data-es="Términos y condiciones" href="#">Términos y condiciones</a> ·
+      <a data-en="Privacy policy" data-es="Política de privacidad" href="#">Política de privacidad</a>
+</span>
+</div>
+</footer><a class="wa" href="https://wa.me/51958074890" rel="noopener" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.5-5.8c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.5-.6c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 00-.7.3c-.3.3-.9 1-.9 2.3 0 1.4 1 2.7 1.1 2.9.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.5-.3z"></path></svg>
+<span data-en="Message us" data-es="Escríbenos">Escríbenos</span>
+</a><script defer="True" src="assets/js/locales.js"></script><script defer="True" src="assets/js/site.js"></script></body>
+</html>

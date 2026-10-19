@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Mi Kcao | Chocolatería y cafetería rooftop en Arequipa</title>
+<meta content="Café y chocolate orgánico de nuestra finca en Cusco, en una terraza en Arequipa." name="description"/>
+<meta content="#C4562B" name="theme-color"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;text y='26' font-size='26'&gt;🍫&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,600&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<meta content="Mi Kcao Chocolates y Café" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="Mi Kcao | Chocolatería y cafetería rooftop en Arequipa" property="og:title"/>
+<meta content="Café y chocolate orgánico de nuestra finca en Cusco, en una terraza en Arequipa." property="og:description"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Mi Kcao Chocolates y Café","address":{"@type":"PostalAddress","streetAddress":"Rooftop, C. Ugarte 314","addressLocality":"Arequipa","addressCountry":"PE"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"21:00"}],"telephone":["+51991127756","+51958074890"],"email":"treetobarfoods@gmail.com","servesCuisine":"Café, chocolate, vegana, sin gluten"}
+</script>
+
+<link href="assets/css/site.css" rel="stylesheet"/>
+<link as="image" fetchpriority="high" href="assets/img/hero-1-1366.webp" imagesizes="100vw" imagesrcset="assets/img/hero-2-1920 960w, assets/img/hero-2-1920 1920w" rel="preload"/>
+<style id="mk-imagenes">
+/* ===== Mi Kcao · imágenes (hero carrusel + bloques con fondo) ===== */
+#main{overflow-x:clip}
+
+/* --- HERO: carrusel con fundido cruzado --- */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero-art{z-index:0}
+.hero-bg{position:absolute;inset:0;z-index:1;overflow:hidden;background:#2a1a12;pointer-events:none}
+.hero-bg .slide{position:absolute;inset:0}
+.hero-bg .slide img{width:100%;height:100%;object-fit:cover;display:block;transform-origin:60% 40%}
+.hero-bg .s1{animation:mkFadeA 18s ease-in-out infinite}
+.hero-bg .s2{opacity:0;animation:mkFadeB 18s ease-in-out infinite}
+.hero-bg .s1 img{object-position:50% 38%;animation:mkZoomA 18s linear infinite}
+.hero-bg .s2 img{object-position:50% 30%;animation:mkZoomB 18s linear infinite}
+@keyframes mkFadeA{0%,44%{opacity:1}56%,94%{opacity:0}100%{opacity:1}}
+@keyframes mkFadeB{0%,44%{opacity:0}56%,94%{opacity:1}100%{opacity:0}}
+@keyframes mkZoomA{0%{transform:scale(1)}56%{transform:scale(1.07)}100%{transform:scale(1)}}
+@keyframes mkZoomB{0%,44%{transform:scale(1)}100%{transform:scale(1.07)}}
+/* velo para legibilidad: degradado lateral + base + viñeta */
+.hero-bg::after{content:"";position:absolute;inset:0;z-index:2;
+  background:
+    linear-gradient(90deg,rgba(20,11,7,.74) 0%,rgba(20,11,7,.52) 42%,rgba(20,11,7,.14) 100%),
+    linear-gradient(0deg,rgba(20,11,7,.60) 0%,rgba(20,11,7,0) 45%),
+    linear-gradient(180deg,rgba(20,11,7,.30) 0%,rgba(20,11,7,0) 22%)}
+.hero-in{position:relative;z-index:3}
+.hero .hero-in .eyebrow{color:#F2C879;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.hero .hero-in h1,.hero .hero-in .lead{color:#FFF6EC;text-shadow:0 2px 22px rgba(0,0,0,.55)}
+.hero .hero-in h1 em{color:#F6B98B}
+.hero .hero-in .btn.ghost{color:#FFF6EC;border-color:rgba(255,246,236,.75)}
+@media (max-width:760px){
+  .hero-bg::after{background:linear-gradient(0deg,rgba(20,11,7,.80) 0%,rgba(20,11,7,.58) 55%,rgba(20,11,7,.50) 100%)}
+}
+
+/* --- BLOQUES CON FONDO FOTOGRÁFICO (a sangre, con velo + leve desenfoque) --- */
+.bgsec{position:relative;isolation:isolate;padding-block:clamp(2rem,5vw,3.5rem)}
+.bgsec::before,.bgsec::after{content:"";position:absolute;top:0;bottom:0;left:50%;width:100vw;margin-left:-50vw;z-index:-1;pointer-events:none}
+.bgsec::before{background:var(--mk-img-lg) center/cover no-repeat;filter:blur(1.5px) saturate(1.05);transform:scale(1.03)}
+.bgsec::after{z-index:-1;background:linear-gradient(180deg,rgba(20,11,7,.72),rgba(20,11,7,.62) 50%,rgba(20,11,7,.74))}
+.bg-bebidas{--mk-img-lg:url(assets/img/bebidas-1920.webp);--mk-img-sm:url(assets/img/bebidas-960.webp)}
+.bg-terraza{--mk-img-lg:url(assets/img/terraza-1920.webp);--mk-img-sm:url(assets/img/terraza-960.webp)}
+.bg-visitanos{--mk-img-lg:url(assets/img/visitanos-1920.webp);--mk-img-sm:url(assets/img/visitanos-960.webp)}
+.bg-terraza::before{background-position:center 55%}
+.bg-terraza::after{background:linear-gradient(90deg,rgba(20,11,7,.80) 0%,rgba(20,11,7,.62) 55%,rgba(20,11,7,.50) 100%)}
+@media (max-width:760px){
+  .bg-bebidas::before{background-image:var(--mk-img-sm)}
+  .bg-terraza::before{background-image:var(--mk-img-sm)}
+  .bg-visitanos::before{background-image:var(--mk-img-sm)}
+  .bg-terraza::after{background:rgba(20,11,7,.74)}
+}
+/* texto claro y tarjetas de vidrio oscuro sobre fotos */
+.bgsec h2,.bgsec h3,.bgsec .lead,.bgsec p{color:#FFF6EC;text-shadow:0 1px 14px rgba(0,0,0,.45)}
+.bgsec .eyebrow{color:#F2C879}
+.bgsec h2 em{color:#F6B98B}
+.bgsec a:not(.btn){color:#FFD39A}
+.bgsec .btn.ghost{color:#FFF6EC;border-color:rgba(255,246,236,.75)}
+.bgsec .card{background:rgba(22,13,8,.55);border-color:rgba(255,246,236,.20);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);box-shadow:0 14px 40px -18px rgba(0,0,0,.6)}
+.bgsec .card *{text-shadow:none}
+.bgsec .workshop{background:rgba(22,13,8,.62);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+
+@media (prefers-reduced-motion:reduce){
+  .hero-bg .s1,.hero-bg .s2,.hero-bg .slide img{animation:none!important}
+  .hero-bg .s1{opacity:1}.hero-bg .s2{opacity:0}
+}
+</style>
+</head>
+<body data-current-page="inicio"><div aria-hidden="true" class="prog" id="prog"></div><header class="nav">
+<div class="wrap nav-in">
+<a aria-label="Mi Kcao — inicio" class="brand" href="index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 3c5.4 3.3 8.6 8 8.6 12.8 0 4.4-3.5 8.7-8.6 11.2-5.1-2.5-8.6-6.8-8.6-11.2C7.4 11 10.6 6.3 16 3z" fill="currentColor" opacity=".92"></path>
+<path d="M16 7v18" fill="none" stroke="var(--bg)" stroke-linecap="round" stroke-width="1.7"></path>
+</svg>
+<span>Mi Kcao</span>
+</a>
+<nav aria-label="Navegación principal" class="links">
+<a class="" data-en="Farm" data-es="Finca" data-nav="" href="finca-organica.html">Finca</a>
+<a class="" data-en="Café" data-es="Cafetería" data-nav="" href="cafeteria-rooftop.html">Cafetería</a>
+<a class="" data-en="Menu" data-es="Carta" data-nav="" href="carta.html">Carta</a>
+<a class="" data-en="Workshops" data-es="Talleres" data-nav="" href="talleres.html">Talleres</a>
+<a class="" data-en="Farm stay" data-es="Turismo vivencial" data-nav="" href="turismo-vivencial.html">Turismo vivencial</a>
+<a class="" data-en="Shop" data-es="Tienda" data-nav="" href="tienda.html">Tienda</a>
+<a class="" data-en="About" data-es="Nosotros" data-nav="" href="nosotros.html">Nosotros</a>
+<a class="" data-en="Contact" data-es="Contacto" data-nav="" href="contacto.html">Contacto</a>
+</nav>
+<div class="tools">
+<span aria-live="polite" class="status" id="status"><span class="dot"></span><span class="txt">Abierto ahora</span></span>
+<button aria-label="Cambiar idioma" class="chip" id="langBtn" type="button">EN</button>
+<button aria-label="Cambiar tema" class="chip" id="themeBtn" type="button">☾</button>
+</div>
+</div>
+</header><main id="main"><section class="page" id="inicio">
+<div class="hero">
+<div class="hero-bg" aria-hidden="true">
+<div class="slide s1"><img alt="" decoding="async" fetchpriority="high" sizes="100vw" src="assets/img/hero-2-1920.webp" srcset="assets/img/hero-2-960.webp 960w, assets/img/hero-2-1920.webp 1920w"/></div>
+<div class="slide s2"><img alt="" decoding="async" loading="lazy" sizes="100vw" src="assets/img/hero-1-1920.webp" srcset="assets/img/hero-1-960.webp 960w, assets/img/hero-1-1920.webp 1920w"/></div>
+</div>
+<svg aria-hidden="true" class="hero-art" preserveaspectratio="xMidYMax slice" viewbox="0 0 1440 640">
+<defs>
+<lineargradient id="skyG" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" style="stop-color:var(--sky1)"></stop>
+<stop offset="52%" style="stop-color:var(--sky2)"></stop>
+<stop offset="100%" style="stop-color:var(--sky3)"></stop>
+</lineargradient>
+<radialgradient id="sunG">
+<stop offset="0%" stop-color="#FFD98C" stop-opacity=".95"></stop>
+<stop offset="55%" stop-color="#F2A85A" stop-opacity=".45"></stop>
+<stop offset="100%" stop-color="#F2A85A" stop-opacity="0"></stop>
+</radialgradient>
+</defs>
+<rect fill="url(#skyG)" height="640" width="1440"></rect>
+<circle class="sun" cx="1060" cy="200" fill="url(#sunG)" r="180"></circle>
+<circle class="sun" cx="1060" cy="200" fill="#FFCE79" opacity=".92" r="58"></circle>
+<g class="lay lay-far">
+<path d="M0 432 L170 296 L318 384 L468 258 L640 402 L800 320 L980 424 L1160 300 L1320 402 L1440 342 L1440 640 L0 640Z" style="fill:var(--m-far)"></path>
+</g>
+<g class="lay lay-mid">
+<path d="M0 502 L160 400 L340 484 L520 378 L720 492 L900 408 L1100 502 L1280 430 L1440 500 L1440 640 L0 640Z" style="fill:var(--m-mid)"></path>
+</g>
+<g class="steam" fill="none" opacity=".5" stroke-linecap="round" stroke-width="3.4" style="stroke:var(--gold)">
+<path d="M690 486 c -15 -24, 15 -36, 0 -60 c -13 -22, 13 -32, 2 -54"></path>
+<path d="M734 492 c -15 -24, 15 -36, 0 -60 c -13 -22, 13 -32, 2 -54"></path>
+<path d="M778 486 c -15 -24, 15 -36, 0 -60 c -13 -22, 13 -32, 2 -54"></path>
+</g>
+<g class="lay lay-near">
+<path d="M0 562 C 240 500, 420 604, 720 546 C 1000 494, 1200 588, 1440 546 L1440 640 L0 640Z" style="fill:var(--m-near)"></path>
+</g>
+</svg>
+<div class="wrap hero-in">
+<p class="eyebrow" data-en="Santa Teresa, Cusco → Arequipa" data-es="Santa Teresa, Cusco → Arequipa">Santa Teresa, Cusco → Arequipa</p>
+<h1 data-en="Coffee and chocolate that connect you &lt;em&gt;to the land&lt;/em&gt;" data-es="Café y chocolate que conectan &lt;em&gt;con la tierra&lt;/em&gt;">Café y chocolate que conectan <em>con la tierra</em></h1>
+<p class="lead" data-en="We grow cacao and coffee on our farm in the Cusco jungle and serve them on a rooftop in Arequipa." data-es="Cultivamos cacao y café en nuestra finca de la selva de Cusco y los servimos en una terraza en Arequipa.">Cultivamos cacao y café en nuestra finca de la selva de Cusco y los servimos en una terraza en Arequipa.</p>
+<div class="cta">
+<a class="btn primary" data-en="See menu" data-es="Ver carta" href="carta.html">Ver carta</a>
+<a class="btn ghost" data-en="Book a workshop" data-es="Reservar taller" href="talleres.html">Reservar taller</a>
+</div>
+</div>
+</div>
+<!-- Pilares -->
+<div class="sec wrap bgsec bg-bebidas">
+<div class="cards">
+<article class="card rv">
+<span class="num-big">01</span>
+<h3 data-en="Organic farm" data-es="Finca orgánica">Finca orgánica</h3>
+<p data-en="Permaculture and agroecology in Santa Teresa, Cusco." data-es="Permacultura y agroecología en Santa Teresa, Cusco.">Permacultura y agroecología en Santa Teresa, Cusco.</p>
+<a data-en="Discover" data-es="Conocer" href="finca-organica.html">Conocer</a>
+</article>
+<article class="card rv">
+<span class="num-big">02</span>
+<h3 data-en="Rooftop café" data-es="Cafetería rooftop">Cafetería rooftop</h3>
+<p data-en="Coffee, chocolate, meals and cocktails." data-es="Café, chocolates, comidas y cócteles.">Café, chocolates, comidas y cócteles.</p>
+<a data-en="Visit" data-es="Visitar" href="cafeteria-rooftop.html">Visitar</a>
+</article>
+<article class="card rv">
+<span class="num-big">03</span>
+<h3 data-en="Workshops" data-es="Talleres">Talleres</h3>
+<p data-en="Learn to make chocolate with Chuncho cacao." data-es="Aprende a hacer chocolate con cacao Chuncho.">Aprende a hacer chocolate con cacao Chuncho.</p>
+<a data-en="Book" data-es="Reservar" href="talleres.html">Reservar</a>
+</article>
+<article class="card rv">
+<span class="num-big">04</span>
+<h3 data-en="Shop" data-es="Tienda">Tienda</h3>
+<p data-en="Coffee, chocolate, honey and more, from Arequipa." data-es="Café, chocolate, miel y más, desde Arequipa.">Café, chocolate, miel y más, desde Arequipa.</p>
+<a data-en="Shop now" data-es="Comprar" href="tienda.html">Comprar</a>
+</article>
+</div>
+</div>
+<!-- Cifras -->
+<div class="sec tight wrap">
+<div class="stats">
+<div class="stat rv"><b data-count="2018">2018</b><span data-en="The year Mi Kcao began" data-es="Año en que nació Mi Kcao">Año en que nació Mi Kcao</span></div>
+<div class="stat rv"><b data-count="2">2</b><span data-en="Chocolate workshops a day" data-es="Talleres de chocolate al día">Talleres de chocolate al día</span></div>
+<div class="stat rv"><b data-count="3">3</b><span data-en="Hours from the farm to Machu Picchu" data-es="Horas de la finca a Machu Picchu">Horas de la finca a Machu Picchu</span></div>
+</div>
+</div>
+<!-- Terraza -->
+<div class="sec wrap bgsec bg-terraza">
+<div class="split">
+<div class="rv">
+<p class="eyebrow" data-en="The rooftop" data-es="La terraza">La terraza</p>
+<h2 data-en="A rooftop to &lt;em&gt;taste the origin&lt;/em&gt;" data-es="Un rooftop para &lt;em&gt;probar el origen&lt;/em&gt;">Un rooftop para <em>probar el origen</em></h2>
+<p class="lead" data-en="Coffee and cacao drinks, meals made with ingredients from our harvest, and vegan and gluten-free options. Ring the bell when you arrive." data-es="Bebidas de café y cacao, comidas con ingredientes de nuestra cosecha y opciones veganas y sin gluten. Toca el timbre al llegar.">Bebidas de café y cacao, comidas con ingredientes de nuestra cosecha y opciones veganas y sin gluten. Toca el timbre al llegar.</p>
+<a class="btn ghost" data-en="See the menu" data-es="Ver la carta" href="carta.html">Ver la carta</a>
+</div>
+<div class="rv">
+<div class="workshop" style="padding:clamp(1.6rem,4vw,2.6rem)">
+<h3 data-en="C. Ugarte 314, Arequipa" data-es="C. Ugarte 314, Arequipa">C. Ugarte 314, Arequipa</h3>
+<p data-en="Mon–Sat · 9 am – 9 pm · Sunday closed" data-es="Lun–Sáb · 9:00 a. m. – 9:00 p. m. · Domingo cerrado">Lun–Sáb · 9:00 a. m. – 9:00 p. m. · Domingo cerrado</p>
+<p data-en="Happy hour Mon–Fri · 4 – 9 pm" data-es="Happy hour L–V · 4:00 – 9:00 p. m." style="margin:0">Happy hour L–V · 4:00 – 9:00 p. m.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Taller destacado -->
+<div class="sec tight wrap">
+<div class="workshop rv">
+<p class="eyebrow" data-en="Signature workshop" data-es="Taller estrella" style="color:var(--gold)">Taller estrella</p>
+<h2 data-en="Chocolate workshop with &lt;em&gt;Chuncho cacao&lt;/em&gt;" data-es="Taller de chocolate con &lt;em&gt;cacao Chuncho&lt;/em&gt;">Taller de chocolate con <em>cacao Chuncho</em></h2>
+<p class="lead" data-en="From fruit to bar. Every day at 10:00 am and 3:30 pm, in Spanish and English." data-es="Del fruto a la barra. Todos los días a las 10:00 a. m. y 3:30 p. m., en español e inglés.">Del fruto a la barra. Todos los días a las 10:00 a. m. y 3:30 p. m., en español e inglés.</p>
+<a class="btn primary" data-en="Book" data-es="Reservar" href="taller-cacao-chuncho.html">Reservar</a>
+</div>
+</div>
+<!-- Turismo -->
+<div class="sec wrap">
+<div class="split rev">
+<div class="rv">
+<p class="eyebrow" data-en="Farm stay" data-es="Turismo vivencial">Turismo vivencial</p>
+<h2 data-en="Live the farm in &lt;em&gt;the Cusco jungle&lt;/em&gt;" data-es="Vive la finca en &lt;em&gt;la selva de Cusco&lt;/em&gt;">Vive la finca en <em>la selva de Cusco</em></h2>
+<p class="lead" data-en="Stay with a farming family about 3 hours from Machu Picchu. Coffee, cacao, coca and fruit, from planting to harvest." data-es="Estadía con una familia campesina, a unas 3 horas de Machu Picchu. Café, cacao, coca y frutas, de la siembra a la cosecha.">Estadía con una familia campesina, a unas 3 horas de Machu Picchu. Café, cacao, coca y frutas, de la siembra a la cosecha.</p>
+<a class="btn ghost" data-en="Discover the farm stay" data-es="Conocer la experiencia" href="turismo-vivencial.html">Conocer la experiencia</a>
+</div>
+<div class="rv">
+<div class="cards" style="grid-template-columns:1fr">
+<div class="card"><h3 data-en="Disconnect" data-es="Desconecta">Desconecta</h3><p data-en="Rivers, forest, waterfalls, birds and fruit trees." data-es="Ríos, bosque, cascadas, aves y frutales.">Ríos, bosque, cascadas, aves y frutales.</p></div>
+<div class="card"><h3 data-en="Real rural life" data-es="Vida rural real">Vida rural real</h3><p data-en="A part of the region few travellers ever see." data-es="Una parte de la región que pocos viajeros ven.">Una parte de la región que pocos viajeros ven.</p></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Visítanos -->
+<div class="sec tight wrap bgsec bg-visitanos">
+<div class="cards">
+<div class="card rv">
+<h3 data-en="Address" data-es="Dirección">Dirección</h3>
+<p data-en="Rooftop, C. Ugarte 314, Arequipa. Ring the bell when you arrive." data-es="Rooftop, C. Ugarte 314, Arequipa. Toca el timbre al llegar.">Rooftop, C. Ugarte 314, Arequipa. Toca el timbre al llegar.</p>
+</div>
+<div class="card rv">
+<h3 data-en="Hours" data-es="Horario">Horario</h3>
+<p data-en="Monday to Saturday, 9 am – 9 pm · Sunday closed." data-es="Lunes a sábado, 9:00 a. m. – 9:00 p. m. · Domingo cerrado.">Lunes a sábado, 9:00 a. m. – 9:00 p. m. · Domingo cerrado.</p>
+</div>
+<div class="card rv">
+<h3 data-en="Reservations" data-es="Reservas">Reservas</h3>
+<p data-en="Message us on WhatsApp and we'll confirm your table or workshop." data-es="Escríbenos por WhatsApp y te confirmamos tu mesa o taller.">Escríbenos por WhatsApp y te confirmamos tu mesa o taller.</p>
+<a data-en="Message" data-es="Escribir" href="https://wa.me/51958074890" rel="noopener" target="_blank">Escribir</a>
+</div>
+</div>
+<p class="note rv" data-en="Leave a review on Google or TripAdvisor and claim a surprise." data-es="Deja tu comentario en Google o TripAdvisor y reclama una sorpresa.">Deja tu comentario en Google o TripAdvisor y reclama una sorpresa.</p>
+</div>
+</section></main><section class="strip">
+<div class="wrap strip-in">
+<div>
+<strong data-en="Chocolate workshops" data-es="Talleres de chocolate">Talleres de chocolate</strong>
+<p data-en="Every day, 10:00 am and 3:30 pm · Spanish &amp; English" data-es="Todos los días, 10:00 a. m. y 3:30 p. m. · En español e inglés">Todos los días, 10:00 a. m. y 3:30 p. m. · En español e inglés</p>
+</div>
+<a class="btn primary" data-en="Book" data-es="Reservar" href="talleres.html">Reservar</a>
+</div>
+</section><footer class="foot">
+<div class="wrap foot-in">
+<div>
+<h4>Mi Kcao</h4>
+<p class="addr">
+        Rooftop, C. Ugarte 314<br/>Arequipa, Perú<br/>
+<span data-en="Mon–Sat 9 am–9 pm · Sunday closed" data-es="Lun–Sáb 9:00–21:00 · Domingo cerrado">Lun–Sáb 9:00–21:00 · Domingo cerrado</span>
+</p>
+</div>
+<div>
+<h4 data-en="Contact" data-es="Contacto">Contacto</h4>
+<ul>
+<li><a href="https://wa.me/51991127756" rel="noopener" target="_blank"> </a></li>
+<li><a href="https://wa.me/51958074890" rel="noopener" target="_blank">WhatsApp +51 958 074 890</a></li>
+<li><a href="mailto:treetobarfoods@gmail.com">treetobarfoods@gmail.com</a></li>
+</ul>
+</div>
+<div>
+<h4 data-en="Explore" data-es="Explorar">Explorar</h4>
+<ul>
+<li><a data-en="Organic farm" data-es="Finca orgánica" href="finca-organica.html">Finca orgánica</a></li>
+<li><a data-en="Rooftop café" data-es="Cafetería rooftop" href="cafeteria-rooftop.html">Cafetería rooftop</a></li>
+<li><a data-en="Menu" data-es="Carta" href="carta.html">Carta</a></li>
+<li><a data-en="Workshops" data-es="Talleres" href="talleres.html">Talleres</a></li>
+<li><a data-en="Farm stay" data-es="Turismo vivencial" href="turismo-vivencial.html">Turismo vivencial</a></li>
+<li><a data-en="Shop" data-es="Tienda" href="tienda.html">Tienda</a></li>
+<li><a data-en="Wholesale" data-es="Mayoristas" href="mayoristas.html">Mayoristas</a></li>
+</ul>
+</div>
+<div>
+<h4 data-en="Social" data-es="Redes">Redes</h4>
+<ul>
+<li><a href="https://instagram.com/mi.kcao" rel="noopener" target="_blank">Instagram @mi.kcao</a></li>
+<li><a href="#" rel="noopener" target="_blank">Facebook</a></li>
+<li><a href="#" rel="noopener" target="_blank">TikTok</a></li>
+<li><a href="https://maps.google.com/?q=Mi+Kcao+Arequipa" rel="noopener" target="_blank">Google Maps</a></li>
+<li><a href="https://www.tripadvisor.com/" rel="noopener" target="_blank">TripAdvisor</a></li>
+</ul>
+</div>
+</div>
+<div class="wrap foot-bottom">
+<span data-en="RUC 20604914583 · © 2026 Mi Kcao Chocolates y Café" data-es="RUC 20604914583 · © 2026 Mi Kcao Chocolates y Café">RUC 20604914583 · © 2026 Mi Kcao Chocolates y Café</span>
+<span>
+<a data-en="Terms &amp; conditions" data-es="Términos y condiciones" href="#">Términos y condiciones</a> ·
+      <a data-en="Privacy policy" data-es="Política de privacidad" href="#">Política de privacidad</a>
+</span>
+</div>
+</footer><a class="wa" href="https://wa.me/51958074890" rel="noopener" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.5-5.8c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.5-.6c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 00-.7.3c-.3.3-.9 1-.9 2.3 0 1.4 1 2.7 1.1 2.9.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.5-.3z"></path></svg>
+<span data-en="Message us" data-es="Escríbenos">Escríbenos</span>
+</a><script defer="True" src="assets/js/locales.js"></script><script defer="True" src="assets/js/site.js"></script></body>
